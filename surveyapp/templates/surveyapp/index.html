@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  {% if success_message != None %}
+  <div class="alert alert-success">
+    <strong>Success!</strong> {{ success_message }}
+  </div>
+  {% endif %}
+
+  {% if error_message != None %}
+  <div class="alert alert-danger">
+    <strong>Error!</strong> {{ error_message }}
+  </div>
+  {% endif %}
+
+  {% if question != None %}
+  <form method="POST">{% csrf_token %}
+    <fieldset>
+      <strong>{{ question.text }}</strong>
+      {% for choice in choices %}
+      <label>
+        <input type="radio" name="choice" id="choice1" value="{{ choice.id }}">
+        {{ choice.text }}
+      </label>
+      {% endfor %}
+
+      <input type="hidden" name="question" value="{{ question.id }}" />
+
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+  {% else %}
+    Looks like there are no new questions for you!
+  {% endif %}
+
+{% endblock %}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="SurveyApp">
+    <meta name="author" content="Brad Jewell">
+
+    <title>SurveyApp</title>
+
+    <!-- bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'surveyapp/style.css' %}" />
+  </head>
+  <body role="document">
+    <header class="navbar">
+      SurveyApp
+      <div class="authorship">by Brad Jewell</div>
+    </header>
+    <div class="container">
+      {% block content %}{% endblock %}
+    </div>
+    {% block script %}{% endblock %}
+  </body>
+</html>

@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #3F51B5;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+button {
+  margin-top: 1rem;
+}
+
+.authorship {
+  font-size: 0.8rem;
+}
