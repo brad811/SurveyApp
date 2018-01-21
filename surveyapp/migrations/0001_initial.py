@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('text', models.CharField(max_length=2048)),
-                ('question', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='survey.Question')),
+                ('question', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='surveyapp.Question')),
             ],
         ),
         migrations.CreateModel(
@@ -33,8 +33,8 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('guest', models.CharField(max_length=2048)),
-                ('choice', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='survey.QuestionChoice')),
-                ('question', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='survey.Question')),
+                ('choice', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='surveyapp.QuestionChoice')),
+                ('question', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='surveyapp.Question')),
             ],
         ),
     ]

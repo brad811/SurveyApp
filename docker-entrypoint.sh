@@ -7,7 +7,7 @@ done
 
 # Update database migrations
 echo "Update database migrations"
-python3 manage.py makemigrations survey
+python3 manage.py makemigrations surveyapp
 
 # Apply database migrations
 echo "Apply database migrations"
@@ -15,7 +15,7 @@ python3 manage.py migrate
 
 # Load fixtures
 echo "Load fixtures"
-python3 manage.py loaddata survey/fixtures/superuser.json
+python3 manage.py loaddata surveyapp/fixtures/superuser.json
 
 # Start server
 echo "Starting server"

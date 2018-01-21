@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
-    path('survey/', include('survey.urls')),
+    path('survey/', include('surveyapp.urls')),
     url(r'^admin/', admin.site.urls),
 ]

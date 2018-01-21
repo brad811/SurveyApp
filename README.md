@@ -4,6 +4,7 @@ A simple survey app
 ### Requirements
 - python 3
 - Docker
+- docker-compose
 
 ### How to run
 - `cd` to the project directory
@@ -11,7 +12,7 @@ A simple survey app
 - `docker-compose build`
 - `docker-compose up`
 - Visit `http://localhost:8000/survey/`
-- To add, edit, or delete questions, or view results, go to the Django admin panel: `http://localhost:8000/admin/survey/question/`
+- To add, edit, or delete questions, or view results, go to the Django admin panel: `http://localhost:8000/admin/surveyapp/question/`
 
 ### Details
 This is a simple Django survey app using MySQL, than can be run within docker containers.

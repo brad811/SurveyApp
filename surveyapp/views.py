@@ -49,7 +49,7 @@ def index(request):
   # get the choices for the selected question
   choices = QuestionChoice.objects.filter(question=random_question)
 
-  return render(request, 'survey/index.html', {
+  return render(request, 'surveyapp/index.html', {
       'question': random_question,
       'choices': choices,
       'success_message': success_message,
