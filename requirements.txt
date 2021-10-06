@@ -49,7 +49,7 @@ queuelib==1.4.2
 requests==2.12.4
 requests-oauthlib==0.7.0
 rsa==3.4.2
-Scrapy==1.4.0
+Scrapy==1.8.1
 service-identity==17.0.0
 six==1.10.0
 social-auth-app-django==0.1.0
