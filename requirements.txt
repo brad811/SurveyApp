@@ -55,7 +55,7 @@ six==1.10.0
 social-auth-app-django==0.1.0
 social-auth-core==0.2.1
 stevedore==1.25.0
-Twisted==17.9.0
+Twisted==22.10.0
 uritemplate==3.0.0
 urllib3==1.22
 virtualenv==15.1.0
